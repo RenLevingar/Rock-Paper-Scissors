@@ -1,0 +1,201 @@
+.grid {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    grid-template-rows: repeat(3,60px);
+    grid-template-columns: 100px 260px 260px 260px;
+}
+
+.user {
+    display: flex;
+    grid-area: user;
+    border: 5px solid black;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 260px;
+    height: 180px;
+}
+
+.vs {
+    display: flex;
+    grid-area: vs;
+    border: 5px solid black;
+    grid-column: 3/4;
+    grid-row: 1/4;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 260px;
+    height: 180px;
+}
+
+.com {
+    display: flex;
+    grid-area: com;
+    border: 5px solid black;
+    grid-column: 4/5;
+    grid-row: 1/4;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 260px;
+    height: 180px;
+}
+
+.rock {
+    grid-area: rock;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.paper {
+    grid-area: paper;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.scissors {
+    grid-area: scissors;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.large {
+    font-size: 75px;
+}
+
+.select {
+    width: 50px;
+    height: 200px;
+}
+
+.center {
+    text-align: center;
+}
+
+body{
+    background-color: aqua;
+}
+
+button {
+    height:60px;
+    width: 100px
+}
+
+.small {
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgb(1, 137, 137);
+    text-align: center;
+    height: 55px;
+    width: 1fr;
+}
+
+.userIMG {
+    transform: rotate(90deg);
+}
+
+.cpIMG{
+    transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 470px) {
+    .grid {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    grid-template-rows: auto;
+    grid-template-columns: 100px 100px;
+    }
+
+    button {
+        height:90px;
+        width: 100px
+    }
+
+    .user {
+        display: flex;
+        grid-area: user;
+        border: 5px solid black;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 90px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+    
+    .vs {
+        display: flex;
+        grid-area: vs;
+        border: 5px solid black;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 90px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+    
+    .com {
+        display: flex;
+        grid-area: com;
+        border: 5px solid black;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        height: 90px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+    
+    .rock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: rock;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .paper {
+        display: flex;
+        grid-area: paper;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .scissors {
+        display: flex;
+        grid-area: scissors;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .small {
+        font-size: 20px;
+    }
+
+    .large {
+        font-size: 50px;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+    img {
+        height: 90px;
+    }
+  }
